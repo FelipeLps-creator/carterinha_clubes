@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carteirinha Digital Móvel - Country Club | Modernize o Acesso do Seu Clube</title>
+    <meta name="description" content="Solução 100% digital que reduz custos, elimina fraudes e eleva a experiência do seu sócio. Chega de carteirinhas plásticas.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    
+    <!-- SEÇÃO HERO -->
+    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-cyan-800 text-white min-h-screen flex items-center relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute inset-0" style="background-image: radial-gradient(circle at 2px 2px, white 1px, transparent 0); background-size: 40px 40px;"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-20 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Conteúdo Textual -->
+                <div class="text-center lg:text-left">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Chega de Carteirinhas Plásticas.<br>
+                        <span class="text-cyan-400">Modernize o Acesso</span> do Seu Clube.
+                    </h1>
+                    <p class="text-xl sm:text-2xl text-blue-100 mb-8 leading-relaxed">
+                        A solução 100% digital que reduz custos, elimina fraudes e eleva a experiência do seu sócio com o App que ele já usa: o celular.
+                    </p>
+                    
+                    <!-- Formulário CTA Hero -->
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-6 sm:p-8 shadow-2xl border border-white/20">
+                        <h3 class="text-2xl font-semibold mb-4">Solicite uma Demonstração Gratuita</h3>
+                        <form class="space-y-4" id="heroForm">
+                            <input type="text" placeholder="Seu Nome Completo" required
+                                class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                            <input type="email" placeholder="Seu Email Corporativo" required
+                                class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                            <input type="tel" placeholder="Telefone (WhatsApp)" required
+                                class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                            <input type="text" placeholder="Nome do Clube" required
+                                class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                            <button type="submit" 
+                                class="w-full bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
+                                Solicitar Demonstração Gratuita →
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Mockup Celular -->
+                <div class="flex justify-center lg:justify-end">
+                    <div class="relative">
+                        <div class="bg-gradient-to-br from-gray-800 to-gray-900 rounded-[3rem] p-4 shadow-2xl transform hover:scale-105 transition-transform duration-300">
+                            <div class="bg-white rounded-[2.5rem] overflow-hidden w-64 h-[500px] shadow-inner">
+                                <!-- Mockup da Carteirinha Digital -->
+                                <div class="h-full bg-gradient-to-br from-blue-600 to-cyan-500 p-6 flex flex-col items-center justify-center text-white">
+                                    <div class="bg-white/20 backdrop-blur-sm rounded-2xl p-6 w-full mb-4">
+                                        <div class="text-center mb-4">
+                                            <div class="w-24 h-24 bg-white rounded-full mx-auto mb-3 flex items-center justify-center">
+                                                <svg class="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                                                </svg>
+                                            </div>
+                                            <h3 class="font-bold text-lg">COUNTRY CLUB</h3>
+                                            <p class="text-sm opacity-90">Sócio Premium</p>
+                                        </div>
+                                        <div class="bg-white rounded-lg p-4 mb-4">
+                                            <div class="w-full h-32 bg-gray-200 rounded flex items-center justify-center">
+                                                <div class="text-center">
+                                                    <div class="grid grid-cols-3 gap-1 mx-auto w-24 h-24">
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                        <div class="bg-black"></div>
+                                                    </div>
+                                                    <p class="text-xs text-gray-600 mt-2">QR Code Dinâmico</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="text-center text-xs opacity-75">
+                                            Válido por 30 segundos
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Decoração -->
+                        <div class="absolute -top-4 -right-4 w-24 h-24 bg-cyan-400 rounded-full opacity-20 blur-2xl"></div>
+                        <div class="absolute -bottom-4 -left-4 w-32 h-32 bg-blue-500 rounded-full opacity-20 blur-3xl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-white opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- SEÇÃO PROBLEMA -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                    Os Custos Invisíveis da <span class="text-red-600">Carteirinha Física</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Você está perdendo dinheiro e tempo sem nem perceber
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <!-- Card de Dor 1 -->
+                <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Alto Custo Anual</h3>
+                            <p class="text-gray-700">
+                                Impressão, reimpressão por perdas e logística consomem milhares de reais anualmente do seu orçamento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card de Dor 2 -->
+                <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Tempo Perdido</h3>
+                            <p class="text-gray-700">
+                                Sua secretaria gasta horas preciosas na emissão e entrega de carteirinhas, tempo que poderia ser investido em atendimento.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card de Dor 3 -->
+                <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Risco de Fraude</h3>
+                            <p class="text-gray-700">
+                                Cartões emprestados ou clonados permitem acesso não autorizado, gerando perdas financeiras e de segurança.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Card de Dor 4 -->
+                <div class="bg-red-50 border-l-4 border-red-500 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0">
+                            <div class="w-12 h-12 bg-red-500 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.172 16.172a4 4 0 015.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="ml-4">
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Experiência Obsoleta</h3>
+                            <p class="text-gray-700">
+                                Seus sócios esperam modernidade. Carteirinhas físicas são do século passado e prejudicam a imagem do clube.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOLUÇÃO -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-cyan-50">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                        Sua Central de Acesso 100% Digital:<br>
+                        <span class="text-blue-600">A Carteirinha Digital Móvel</span>
+                    </h2>
+                    <p class="text-xl text-gray-700 max-w-3xl mx-auto">
+                        A solução que transforma o celular do seu sócio na carteirinha mais segura e moderna do mercado.
+                    </p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-2xl p-8 sm:p-12 border border-gray-200">
+                    <div class="grid md:grid-cols-2 gap-12 items-center">
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">QR Code Dinâmico e Intransferível</h3>
+                            <p class="text-gray-700 mb-6 leading-relaxed">
+                                Nossa tecnologia gera um QR Code único que <strong>muda automaticamente a cada 30 segundos</strong>, 
+                                tornando impossível compartilhar, fotografar ou clonar. Cada acesso é validado em tempo real contra 
+                                sua base de dados, garantindo segurança total.
+                            </p>
+                            <ul class="space-y-3 mb-6">
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span class="text-gray-700">Acesso via App nativo ou Web Mobile</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span class="text-gray-700">Sincronização automática com seu sistema de gestão</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <svg class="w-6 h-6 text-green-500 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                    </svg>
+                                    <span class="text-gray-700">Dashboard completo de acessos e frequência</span>
+                                </li>
+                            </ul>
+                            
+                            <!-- Duas Opções de Validação -->
+                            <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-xl p-6 border-2 border-blue-200 mt-6">
+                                <h4 class="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                                    <svg class="w-5 h-5 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                    </svg>
+                                    Duas Opções de Validação - Escolha a Ideal para Seu Clube
+                                </h4>
+                                <div class="space-y-4">
+                                    <div class="bg-white rounded-lg p-4 border-l-4 border-cyan-500">
+                                        <div class="flex items-start">
+                                            <div class="w-8 h-8 bg-cyan-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                                <span class="text-white font-bold text-sm">1</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-bold text-gray-900 mb-1">Validação pelo Celular do Porteiro</h5>
+                                                <p class="text-sm text-gray-700">
+                                                    O porteiro usa o próprio celular para escanear o QR Code do sócio. 
+                                                    Validação instantânea, sem necessidade de equipamentos adicionais.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bg-white rounded-lg p-4 border-l-4 border-blue-500">
+                                        <div class="flex items-start">
+                                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center mr-3 flex-shrink-0">
+                                                <span class="text-white font-bold text-sm">2</span>
+                                            </div>
+                                            <div>
+                                                <h5 class="font-bold text-gray-900 mb-1">Número da Ação do Cliente</h5>
+                                                <p class="text-sm text-gray-700">
+                                                    Utilize o mesmo número da ação que já aparece na carteirinha física atual. 
+                                                    Validação simples e familiar para sua equipe.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex justify-center">
+                            <div class="bg-gradient-to-br from-blue-600 to-cyan-500 rounded-2xl p-8 shadow-xl">
+                                <div class="bg-white rounded-xl p-6">
+                                    <div class="text-center mb-4">
+                                        <div class="w-20 h-20 bg-blue-100 rounded-full mx-auto mb-3 flex items-center justify-center">
+                                            <svg class="w-12 h-12 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"/>
+                                            </svg>
+                                        </div>
+                                        <h4 class="font-bold text-lg text-gray-900">COUNTRY CLUB</h4>
+                                    </div>
+                                    <div class="bg-gray-100 rounded-lg p-4 mb-3">
+                                        <div class="grid grid-cols-3 gap-1 mx-auto w-32 h-32">
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                            <div class="bg-black"></div>
+                                        </div>
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="inline-flex items-center px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-semibold">
+                                            <span class="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></span>
+                                            QR Code Ativo
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO OPÇÕES DE VALIDAÇÃO -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                        <span class="text-blue-600">Duas Formas de Validar</span> - Sem Investimento em Equipamentos
+                    </h2>
+                    <p class="text-xl text-gray-600">
+                        Escolha a opção que melhor se adapta à realidade do seu clube
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <!-- Opção 1: Celular do Porteiro -->
+                    <div class="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all border-2 border-cyan-200">
+                        <div class="flex items-center justify-center w-20 h-20 bg-cyan-500 rounded-full mb-6 mx-auto">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Opção 1: Validação pelo Celular do Porteiro</h3>
+                        <p class="text-gray-700 mb-6 text-center leading-relaxed">
+                            O porteiro usa o próprio celular para escanear o QR Code dinâmico do sócio. 
+                            Validação instantânea, sem necessidade de equipamentos adicionais ou investimento em infraestrutura.
+                        </p>
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <h4 class="font-bold text-gray-900 mb-2 flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Vantagens:
+                            </h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">•</span>
+                                    <span>Zero investimento em equipamentos</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">•</span>
+                                    <span>QR Code dinâmico (muda a cada 30 segundos)</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">•</span>
+                                    <span>Validação em tempo real contra a base de dados</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-cyan-500 mr-2">•</span>
+                                    <span>Impossível compartilhar ou clonar</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <span class="inline-block bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-semibold">
+                                Ideal para: Validação moderna e segura
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <!-- Opção 2: Número da Ação -->
+                    <div class="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all border-2 border-blue-200">
+                        <div class="flex items-center justify-center w-20 h-20 bg-blue-600 rounded-full mb-6 mx-auto">
+                            <svg class="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 20l4-16m2 16l4-16M6 9h14M4 15h14"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Opção 2: Número da Ação do Cliente</h3>
+                        <p class="text-gray-700 mb-6 text-center leading-relaxed">
+                            Utilize o mesmo número da ação que já aparece na carteirinha física atual. 
+                            Validação simples, familiar para sua equipe e sem necessidade de mudanças no processo atual.
+                        </p>
+                        <div class="bg-white rounded-lg p-4 mb-4">
+                            <h4 class="font-bold text-gray-900 mb-2 flex items-center">
+                                <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+                                </svg>
+                                Vantagens:
+                            </h4>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    <span>Processo familiar para a equipe</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    <span>Mesmo número que já está na carteirinha física</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    <span>Transição suave e sem treinamento complexo</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-500 mr-2">•</span>
+                                    <span>Validação rápida e eficiente</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <span class="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold">
+                                Ideal para: Transição gradual e familiar
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mt-12 text-center">
+                    <div class="bg-gradient-to-r from-blue-600 to-cyan-600 rounded-xl p-6 text-white inline-block">
+                        <p class="text-lg font-semibold mb-2">💡 Não sabe qual escolher?</p>
+                        <p class="text-blue-100">
+                            Nossos consultores ajudam você a escolher a melhor opção para o seu clube durante a demonstração gratuita.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO BENEFÍCIOS -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+                    Por Que Escolher a <span class="text-blue-600">Carteirinha Digital</span>?
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Resultados mensuráveis desde o primeiro mês
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <!-- Benefício 1: Economia -->
+                <div class="bg-gradient-to-br from-green-50 to-emerald-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-green-100">
+                    <div class="w-16 h-16 bg-green-500 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Redução de Custos Imediata</h3>
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        Elimine 100% os gastos com material, impressão e frete de cartões anuais. 
+                        Economia que vai direto para o seu resultado financeiro.
+                    </p>
+                    <div class="mt-6 text-center">
+                        <span class="text-3xl font-bold text-green-600">-100%</span>
+                        <p class="text-sm text-gray-600">de custos com carteirinhas</p>
+                    </div>
+                </div>
+                
+                <!-- Benefício 2: Segurança -->
+                <div class="bg-gradient-to-br from-blue-50 to-cyan-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-blue-100">
+                    <div class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Zero Fraudes</h3>
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        Tecnologia de QR Code rotativo e validação em tempo real que impossibilita 
+                        o compartilhamento ou clonagem. Validação pelo celular do porteiro ou número 
+                        da ação - você escolhe o que funciona melhor.
+                    </p>
+                    <div class="mt-6 text-center">
+                        <span class="text-3xl font-bold text-blue-600">100%</span>
+                        <p class="text-sm text-gray-600">seguro e à prova de fraude</p>
+                    </div>
+                </div>
+                
+                <!-- Benefício 3: Experiência -->
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-purple-100">
+                    <div class="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center mb-6 mx-auto">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 text-center">Sócio Sempre Conectado</h3>
+                    <p class="text-gray-700 text-center leading-relaxed">
+                        Seu sócio nunca mais esquece a carteirinha. Acesso instantâneo e moderno, 
+                        diretamente do celular. Experiência que eleva a satisfação e a fidelização.
+                    </p>
+                    <div class="mt-6 text-center">
+                        <span class="text-3xl font-bold text-purple-600">24/7</span>
+                        <p class="text-sm text-gray-600">disponível no celular</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO COMO FUNCIONA -->
+    <section class="py-20 bg-gradient-to-br from-gray-900 to-blue-900 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6">
+                    Implementação em <span class="text-cyan-400">3 Passos Simples</span>
+                </h2>
+                <p class="text-xl text-blue-200">
+                    Sem complicação. Sem interrupções. Sem dores de cabeça.
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Passo 1 -->
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-xl hover:shadow-2xl transition-all">
+                        <div class="flex items-center justify-center w-16 h-16 bg-cyan-500 rounded-full mb-6 mx-auto">
+                            <span class="text-3xl font-bold text-white">1</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Integração Rápida</h3>
+                        <p class="text-blue-100 text-center leading-relaxed">
+                            Conectamos com seu sistema de gestão de sócios em poucos dias. 
+                            Processo simples, sem interrupções e com suporte técnico dedicado.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <span class="text-cyan-400 font-semibold">2-5 dias úteis</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Passo 2 -->
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-xl hover:shadow-2xl transition-all">
+                        <div class="flex items-center justify-center w-16 h-16 bg-cyan-500 rounded-full mb-6 mx-auto">
+                            <span class="text-3xl font-bold text-white">2</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Comunicação e Engajamento</h3>
+                        <p class="text-blue-100 text-center leading-relaxed">
+                            Enviamos o link de acesso/download do App para todos os sócios. 
+                            Modelo pronto de comunicação profissional e suporte na migração.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <span class="text-cyan-400 font-semibold">Comunicação pronta</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Passo 3 -->
+                    <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 border border-white/20 shadow-xl hover:shadow-2xl transition-all">
+                        <div class="flex items-center justify-center w-16 h-16 bg-cyan-500 rounded-full mb-6 mx-auto">
+                            <span class="text-3xl font-bold text-white">3</span>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4 text-center">Validação Flexível</h3>
+                        <p class="text-blue-100 text-center leading-relaxed">
+                            Escolha a melhor forma de validar: pelo celular do porteiro (QR Code) ou 
+                            pelo número da ação do cliente. Acesso validado em segundos, com dados de 
+                            frequência completos para a diretoria.
+                        </p>
+                        <div class="mt-6 text-center">
+                            <span class="text-cyan-400 font-semibold">2 opções de validação</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Linha Conectando os Passos -->
+                <div class="hidden md:block relative mt-8 mb-8">
+                    <div class="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-cyan-500 via-blue-500 to-cyan-500 transform -translate-y-1/2"></div>
+                    <div class="absolute top-1/2 left-1/3 w-3 h-3 bg-cyan-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <div class="absolute top-1/2 left-2/3 w-3 h-3 bg-cyan-500 rounded-full transform -translate-x-1/2 -translate-y-1/2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CTA FINAL -->
+    <section class="py-20 bg-gradient-to-br from-blue-600 via-blue-700 to-cyan-600 text-white">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-4xl sm:text-5xl font-bold mb-6">
+                    Pronto para ter um Clube Mais <span class="text-cyan-300">Eficiente e Rentável</span>?
+                </h2>
+                <p class="text-xl sm:text-2xl text-blue-100 mb-12 leading-relaxed">
+                    Fale com um de nossos especialistas e descubra como economizar a partir do próximo mês.
+                </p>
+                
+                <!-- Formulário CTA Final -->
+                <div class="bg-white/10 backdrop-blur-lg rounded-2xl p-8 sm:p-12 shadow-2xl border border-white/20 max-w-2xl mx-auto">
+                    <h3 class="text-2xl font-semibold mb-6">Quero Falar com um Consultor</h3>
+                    <form class="space-y-4" id="finalForm">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Seu Nome Completo" required
+                                class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                            <input type="tel" placeholder="Telefone (WhatsApp)" required
+                                class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                        </div>
+                        <input type="email" placeholder="Seu Email Corporativo" required
+                            class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                        <input type="text" placeholder="Nome do Clube" required
+                            class="w-full px-4 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-cyan-400">
+                        <button type="submit" 
+                            class="w-full bg-cyan-500 hover:bg-cyan-400 text-white font-bold py-4 px-8 rounded-lg text-lg transition-all duration-300 transform hover:scale-105 shadow-xl">
+                            Quero Falar com um Consultor →
+                        </button>
+                        <p class="text-sm text-blue-200 mt-4">
+                            ✓ Resposta em até 24 horas | ✓ Sem compromisso | ✓ Consultoria gratuita
+                        </p>
+                    </form>
+                </div>
+                
+                <!-- Garantias/Selos -->
+                <div class="mt-12 grid sm:grid-cols-3 gap-6 max-w-3xl mx-auto">
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3">
+                            <svg class="w-8 h-8 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-semibold">Segurança Total</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3">
+                            <svg class="w-8 h-8 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-semibold">ROI Comprovado</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-3">
+                            <svg class="w-8 h-8 text-cyan-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <p class="text-sm font-semibold">Implementação Rápida</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-400 py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <p class="mb-4">© 2024 Carteirinha Digital Móvel - Country Club. Todos os direitos reservados.</p>
+                <p class="text-sm">Solução desenvolvida para modernizar o acesso de clubes, associações e academias.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Configurações de contato
+        const WHATSAPP_NUMBER = '5543996836874'; // Número com código do país (55 = Brasil)
+        const EMAIL_CONTATO = 'felipou23@gmail.com';
+
+        // Função para enviar formulário
+        function enviarFormulario(formId, tipoFormulario) {
+            const form = document.getElementById(formId);
+            const formData = new FormData(form);
+            
+            // Coletar dados do formulário
+            const nome = form.querySelector('input[type="text"]:nth-of-type(1)').value;
+            const email = form.querySelector('input[type="email"]').value;
+            const telefone = form.querySelector('input[type="tel"]').value;
+            const nomeClube = form.querySelector('input[type="text"]:nth-of-type(2)').value || 
+                             form.querySelector('input[type="text"]:last-of-type').value;
+            
+            // Mensagem para WhatsApp
+            const mensagemWhatsApp = encodeURIComponent(
+                `🚀 *Nova Solicitação de Demonstração - ${tipoFormulario}*\n\n` +
+                `👤 *Nome:* ${nome}\n` +
+                `📧 *Email:* ${email}\n` +
+                `📱 *Telefone:* ${telefone}\n` +
+                `🏢 *Clube:* ${nomeClube}\n\n` +
+                `_Solicitação enviada através da landing page_`
+            );
+            
+            // Link do WhatsApp
+            const whatsappLink = `https://wa.me/${WHATSAPP_NUMBER}?text=${mensagemWhatsApp}`;
+            
+            // Abrir WhatsApp
+            window.open(whatsappLink, '_blank');
+            
+            // Preparar email
+            const assuntoEmail = encodeURIComponent(`Nova Solicitação - ${tipoFormulario} - ${nomeClube}`);
+            const corpoEmail = encodeURIComponent(
+                `Nova solicitação de demonstração recebida:\n\n` +
+                `Nome: ${nome}\n` +
+                `Email: ${email}\n` +
+                `Telefone: ${telefone}\n` +
+                `Clube: ${nomeClube}\n\n` +
+                `Tipo de formulário: ${tipoFormulario}`
+            );
+            
+            // Link do email (abre cliente de email)
+            const emailLink = `mailto:${EMAIL_CONTATO}?subject=${assuntoEmail}&body=${corpoEmail}`;
+            
+            // Tentar abrir email (pode não funcionar em todos os navegadores)
+            setTimeout(() => {
+                window.location.href = emailLink;
+            }, 500);
+            
+            // Mensagem de confirmação
+            alert('✅ Obrigado! Redirecionando para WhatsApp...\n\nSeu contato será enviado automaticamente!');
+            
+            // Resetar formulário após um delay
+            setTimeout(() => {
+                form.reset();
+            }, 1000);
+        }
+
+        // Formulários
+        document.getElementById('heroForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            enviarFormulario('heroForm', 'Demonstração Gratuita');
+        });
+
+        document.getElementById('finalForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            enviarFormulario('finalForm', 'Consulta com Consultor');
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
